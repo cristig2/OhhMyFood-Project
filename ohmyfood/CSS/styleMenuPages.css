@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+ul {
+    padding: 0px;
+}
+.title-contain > h1{
+    width: 90%;
+}
+.title-contain > a{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+.title-contain{
+    display: flex;
+    align-items: center;
+
+}
+.border-green {
+    border-bottom: 4px solid rgb(170, 231, 213);
+}
+
+/*ANIMATIONS HEART CARDS*/
+.container-menu span i:nth-child(1){
+    display: none;
+}
+.container-menu span:hover i:nth-child(1){
+    display: block;
+}
+.container-menu span:hover i:nth-child(2){
+    display: none;
+}
+@keyframes changeOpacity {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+button:active {
+    animation: changeOpacity 1.5s;
+    animation-fill-mode: forwards;
+}
+.card img {
+    width: 450px;
+    height: 250px;
+}
+/*ANIMATION MENU*/
+@keyframes animateWidth {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 60px;
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.menu {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 4px;
+    width: 100%;
+    animation: menuButtons 4s;
+    animation-fill-mode: forwards;
+    margin-top: -20px;
+    opacity: 0;
+}
+.animation-main {
+    animation-delay: 1s;
+}
+.animation-dessert {
+    animation-delay: 3s;
+}
+li a .menu {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.menu-buttons li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 1px 2px 2px rgb(0 0 0 / 6%);
+    text-decoration: none;
+    border-radius: 8px;
+    height: 90px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+.menu-buttons li>div {
+    padding: 0 10px;
+}
+.menu-buttons li:hover .checkmark,
+.menu-buttons:active .checkmark {
+    display: flex;
+    animation: animateWidth 0.4s;
+    animation-fill-mode: forwards;
+}
+.menu-buttons li:hover svg,
+.menu-buttons:active svg {
+    animation: spin 1s;
+    animation-fill-mode: forwards;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .btn {
+        padding: 22px 35px;
+        height: fit-content;
+        width: fit-content;
+        border: none;
+        border-radius: 70px;
+        color: #fff;
+        font-weight: 450;
+        font-size: 18px;
+        text-shadow: 0 1.5px 0 rgba(59, 58, 58, 0.5);
+        box-shadow: 0 2.5px 0 rgba(255, 255, 255, .5) inset,
+            0 1px 3px rgba(0, 0, 0, .2);
+        background-image: linear-gradient(#FF79DA 10%, #9356DC 70%);
+        cursor: pointer;
+    }
+    @keyframes menuButtons {
+        from {
+            margin-top: -20px;
+            opacity: 0;
+        }
+        to {
+            margin-top: 0;
+            opacity: 1;
+        }
+    }
+/* DESKTOP */
+/* Screen more than 900px (Desktops)*/
+@media only screen and (min-width : 901px) {
+    .arrow-back{
+        font-size: 50px;
+        display: flex;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .title-logo-all-pages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 65px;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .container-photo {
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+        position: relative;
+    }
+    .restaurant-photo {
+        display: flex;
+        width: 100%;
+        height: 550px;
+        min-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+    }
+    .container-menu {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 25px;
+        margin-top: -40px;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        justify-content: space-around;
+        border-top-left-radius: 45px;
+        border-top-right-radius: 45px;
+        background-color: rgb(235, 237, 237);
+    }
+    .title-heart {
+        display: flex;
+        justify-content: space-between;
+    }
+    .restaurant-name {
+        font-size: 35px;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .heart-animations span i {
+        font-size: 30px;
+        padding: 25px 0;
+    }
+    .menu-title {
+        display: block;
+        width: fit-content;
+        height: 40px;
+        padding: 8px 8px;
+        text-align: center;
+        color: #181818;
+        font-size: 15px;
+    }
+    .bgwhite {
+        background-color: white;
+        margin-bottom: 12px;
+        width: 80%;
+    }
+    .description-plate {
+        width: 400px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .checkmark {
+        background-color: rgb(170, 231, 213);
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        width: 0;
+        padding: 0 !important;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .checkmark svg {
+        display: block;
+        height: 20px;
+        color: rgb(170, 231, 213);
+        background-color: white;
+        border-radius: 100%;
+    }
+    .footer-all-pages {
+        width: 100%;
+        height: 280px;
+        padding-bottom: 25px;
+        background-color: rgb(37, 37, 37);
+    }
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15px;
+        margin-top: 0px;
+        color: white;
+        font-size: 35px;
+        font-weight: 350;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .footer-options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 25px;
+        font-weight: 450;
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+    .fa-utensils {
+        color: white;
+        padding-right: 25px;
+
+    }
+    .fa-handshake-angle {
+        color: white;
+        padding-right: 25px;
+    }
+}
+/* MOBILE */
+/* Screen less than 900px  (tablets mobiles)*/
+@media only screen and (max-width : 900px) {
+    .arrow-back{
+        font-size: 22px;
+    }
+    .title-logo-all-pages {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .container-photo {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+    }
+    .restaurant-photo {
+        display: flex;
+        width: 100%;
+        height: 250px;
+        min-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+    }
+    .container-menu {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 25px;
+        margin-top: -40px;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        justify-content: space-around;
+        border-top-left-radius: 45px;
+        border-top-right-radius: 45px;
+        background-color: rgb(235, 237, 237);
+    }
+    .title-heart {
+        display: flex;
+        justify-content: space-between;
+    }
+    .restaurant-name {
+        font-size: 25px;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .heart-animations span i {
+        font-size: 20px;
+        padding: 20px 0;
+    }
+    .menu-title {
+        display: block;
+        width: fit-content;
+        height: 40px;
+        padding: 8px 8px;
+        text-align: center;
+        color: #181818;
+        font-size: 15px;
+    }
+    .bgwhite {
+        background-color: white;
+        margin-bottom: 12px;
+    }
+    .description-plate {
+        width: 160px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .checkmark {
+        background-color: rgb(170, 231, 213);
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        width: 0;
+        padding: 0 !important;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .checkmark svg {
+        display: block;
+        height: 20px;
+        color: rgb(170, 231, 213);
+        background-color: white;
+        border-radius: 100%;
+    }
+    .footer-all-pages {
+        width: 100%;
+        padding-bottom: 25px;
+        background-color: rgb(37, 37, 37);
+    }
+    .footer-logo {
+        display: flex;
+        justify-content: left;
+        padding-left: 35px;
+        padding-bottom: 15px;
+        margin-top: 0px;
+        color: white;
+        font-size: 30px;
+        font-weight: 400;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .footer-options {
+        display: flex;
+        justify-content: left;
+        padding-left: 20px;
+        color: white;
+        font-size: 25px;
+        font-weight: 450;
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+    .fa-utensils {
+        color: white;
+        padding-right: 25px;
+
+    }
+    .fa-handshake-angle {
+        color: white;
+        padding-right: 25px;
+    }
+}
