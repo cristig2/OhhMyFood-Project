@@ -165,7 +165,7 @@ li a .menu {
     }
 /* DESKTOP */
 /* Screen more than 900px (Desktops)*/
-@media only screen and (min-width : 901px) {
+@media only screen and (min-width : 851px) {
     .arrow-back{
         font-size: 50px;
         display: flex;
@@ -305,7 +305,7 @@ li a .menu {
 }
 /* MOBILE */
 /* Screen less than 900px  (tablets mobiles)*/
-@media only screen and (max-width : 900px) {
+@media only screen and (max-width : 850px) {
     .arrow-back{
         font-size: 22px;
     }
@@ -376,11 +376,16 @@ li a .menu {
         background-color: white;
         margin-bottom: 12px;
     }
+    .plate-bold{
+        font-size: 15px;
+    }
     .description-plate {
         width: 160px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        font-size: 12px;
+        padding-top: 5px;
     }
     .checkmark {
         background-color: rgb(170, 231, 213);
