@@ -514,10 +514,9 @@ button:active {
     .title-cards-restaurants{
         display: flex;
         justify-items: left;
-        margin-left: 20px;
         padding-top: 35px;
         border: none;
-        font-size: 20px;
+        font-size: 25px;
     }
    .card {
         display: flex;
