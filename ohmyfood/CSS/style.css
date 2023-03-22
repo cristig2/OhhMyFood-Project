@@ -167,12 +167,225 @@ button:active {
     }
 }
 /* DESKTOP */
-/* Screen > 900px (Desktops)*/
-@media only screen and (min-width : 851px) {
+@media screen and (min-width : 992px) {
     .title-logo-all-pages {
         font-size: 65px;
         font-weight: 500;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .ubication {
+        width: 100%;
+        padding: 1px 0;
+        background-color:rgb(231, 231, 232);
+        font-size: 25px;
+        font-weight: 600;
+        color: rgb(87, 85, 85);
+        box-shadow: inset 0 8px 8px -5px rgb(179, 179, 179);
+    }
+    .fa-sharp {
+        padding-right: 20px;
+    }
+    .title-header {
+        font-size: 40px;
+        font-weight: 800;
+        font-family: 'Roboto bold', sans-serif;
+    }
+    .lema {
+        font-size: 24px;
+        padding: 10px 80px;
+        color: rgb(87, 85, 85);
+    }
+    .background-lhtgrey {
+        padding: 15px 0;
+        width: 100%;
+        background-color: rgb(241, 241, 241);
+    }
+    .btn {
+        padding: 20px 35px;
+        height: fit-content;
+        width: fit-content;
+        border: none;
+        border-radius: 70px;
+        color: #fff;
+        font-weight: 450;
+        font-size: 26px;
+        text-shadow: 0 -1.5px 0 rgba(59, 58, 58, 0.5);
+        box-shadow: 0 1.5px 0 rgba(255,255,255,.5) inset,
+        0 1px 3px rgba(0,0,0,.2);
+        background-image: linear-gradient(#FF79DA 10%,#9356DC 70%);
+        cursor: pointer;
+    }
+    .title-h3 {
+        border: none;
+        font-size: 35px;
+    }
+    .btn-steps .btn-steps-stl {
+        position: relative;
+        border: none;
+        border-radius: 15px;        
+        margin-left: 10px;
+        margin-bottom: 24px;
+        padding: 22px 20px;
+        width: 60%;
+        font-size: 30px;
+        font-weight: 800;
+        color: rgb(67, 71, 74);
+        box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.2);
+        background-color: rgb(249, 247, 250);
+        transition-property: all;
+        transition-duration: 0.4s;
+    }
+    .btn-steps .btn-steps-stl:hover {
+        transform: scale(1.15);
+        background-color: #eadff8;
+        cursor: pointer;
+    }
+    .num-circle {
+        position: absolute;
+        left: -18px;
+        top: 15px;
+        color: white;
+        font-weight: 450;
+        background-color: #9d71d6;
+        border-radius: 100%;
+        padding: 7px 15px;
+   }
+    .fa-mobile-screen-button {
+        padding-right: 30px;
+        color: rgb(134, 138, 141);
+    }
+    .btn-steps .btn-steps-stl:hover .fa-mobile-screen-button {
+        color: #9d71d6;
+    }
+    .fa-list{
+        padding-right: 30px;
+        color: rgb(134, 138, 141);
+    }
+    .btn-steps .btn-steps-stl:hover .fa-list {
+        color: #9d71d6;
+    }
+    .fa-store{
+        padding-right: 30px;
+        color: rgb(134, 138, 141);
+    }
+    .btn-steps .btn-steps-stl:hover .fa-store {
+        color: #9d71d6;
+    }
+    .cards-restaurants{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #f1f4f3;
+    }
+    .title-cards-restaurants{
+        padding-top: 35px;
+        border: none;
+        font-size: 35px;
+    }
+   .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        width: 1000px;
+        margin: 25px;
+        border-radius: 35px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+   }
+    .img-restaurants{
+        width: 1000px;
+        height: 450px;
+        border-top-right-radius: 35px;
+        border-top-left-radius: 35px;
+        object-fit: cover;
+    }
+    .background-img {
+        width: 100%;
+        height: 450px;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    .no-line {
+        color: black;
+        font-size: 38px;
+        padding: 5px 15px;
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+    .name-restaurant{
+        display: flex;
+        justify-items: left;
+    }
+    .Ubicationrtr{
+        font-size: 24px;
+        padding: 15px;
+        margin-top: -30px;
+    }
+    .card-container {
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+    .heart-container {
+        position: relative;
+        display: inline;
+        margin-top: -30px;
+    }
+    .heart-animations{
+        display: flex; 
+        float: right;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 24px;
+        padding-bottom: 15px;
+        margin-top: -30px;
+    }
+    .footer-all-pages {
+        width: 100%;
+        padding-bottom: 25px;
+        background-color: rgb(37, 37, 37);
+    }
+    .footer-logo {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        padding-bottom: 15px;
+        margin-top: 0px;
+        color: white;
+        font-size: 35px;
+        font-weight: 350;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .footer-options {
+        color: white;
+        font-size: 30px;
+        font-weight: 450;
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+    .fa-utensils{
+        color: white;
+        padding-right: 25px;
+
+    }
+    .fa-handshake-angle{
+        color: white;
+        padding-right: 25px;
+    }
+}
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .title-logo-all-pages {
+        font-size: 45px;
+        font-weight: 450;
         font-family: 'Shrikhand';
         cursor: pointer;
     }
@@ -189,48 +402,49 @@ button:active {
         padding-right: 20px;
     }
     .title-header {
-        font-size: 40px;
+        font-size: 32px;
         font-weight: 800;
-        font-family: 'Raleway', sans-serif;
         font-family: 'Roboto bold', sans-serif;
     }
     .lema {
-        font-size: 24px;
-        padding: 10px 80px;
+        font-size: 21px;
+        padding: 10px 50px;
         color: rgb(87, 85, 85);
     }
+    .background-lhtgrey {
+        padding: 15px 0;
+        width: 100%;
+        background-color: rgb(241, 241, 241);
+    }
     .btn {
-        padding: 15px 35px;
+        padding: 20px 35px;
         height: fit-content;
         width: fit-content;
         border: none;
         border-radius: 70px;
         color: #fff;
         font-weight: 450;
-        font-size: 22px;
+        font-size: 21px;
         text-shadow: 0 -1.5px 0 rgba(59, 58, 58, 0.5);
         box-shadow: 0 1.5px 0 rgba(255,255,255,.5) inset,
         0 1px 3px rgba(0,0,0,.2);
         background-image: linear-gradient(#FF79DA 10%,#9356DC 70%);
         cursor: pointer;
     }
-    .background-lhtgrey {
-        padding: 15px;
-        width: 100%;
-        background-color: rgb(241, 241, 241);
-    }
     .title-h3 {
         border: none;
-        font-size: 32px;
+        font-size: 30px;
+        padding-bottom: 15px;
     }
     .btn-steps .btn-steps-stl {
         position: relative;
         border: none;
-        border-radius: 30px;
-        margin-bottom: 32px;
-        padding: 12px 20px;
-        width: 50%;
-        font-size: 22px;
+        border-radius: 15px;
+        margin-left: 20px;
+        margin-bottom: 22px;
+        padding: 22px 20px;
+        width: 70%;
+        font-size: 24px;
         font-weight: 800;
         color: rgb(67, 71, 74);
         box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.2);
@@ -239,19 +453,19 @@ button:active {
         transition-duration: 0.4s;
     }
     .btn-steps .btn-steps-stl:hover {
-        transform: scale(1.15);
+        transform: scale(1.10);
         background-color: #eadff8;
         cursor: pointer;
     }
     .num-circle {
         position: absolute;
-        left: -7px;
-        top: 8px;
+        left: -15px;
+        top: 16px;
         color: white;
         font-weight: 450;
         background-color: #9d71d6;
         border-radius: 100%;
-        padding: 5px 10px;
+        padding: 5px 12px;
    }
     .fa-mobile-screen-button {
         padding-right: 30px;
@@ -294,7 +508,7 @@ button:active {
         overflow: hidden;
         width: 600px;
         margin: 18px;
-        border-radius: 35px;
+        border-radius: 25px;
         background-color: white;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
@@ -361,9 +575,8 @@ button:active {
         padding-bottom: 15px;
         margin-top: 0px;
         color: white;
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 350;
-        font-family: 'Raleway', sans-serif;
         font-family: 'Shrikhand';
         cursor: pointer;
     }
@@ -376,22 +589,20 @@ button:active {
     }
     .fa-utensils{
         color: white;
-        padding-right: 25px;
+        padding-right: 15px;
 
     }
     .fa-handshake-angle{
         color: white;
-        padding-right: 25px;
+        padding-right: 15px;
     }
 }
 
 /* MOBILE */
-/* Screen < 900px  (tablets mobiles)*/
-@media only screen and (max-width : 850px) {
+@media screen and (max-width : 767px) {
     .title-logo-all-pages{
         font-size: 30px;
         font-weight: 400;
-        font-family: 'Raleway', sans-serif;
         font-family: 'Shrikhand';
         cursor: pointer;
     }
@@ -410,7 +621,6 @@ button:active {
     .title-header{
         font-size: 25px;
         font-weight: 800;
-        font-family: 'Raleway', sans-serif;
         font-family: 'Roboto bold', sans-serif;
     }
     .lema{
@@ -418,32 +628,31 @@ button:active {
         padding: 10px 35px;
         color: rgb(116, 116, 117);
     }
+    .background-lhtgrey{
+        padding-top: 15px;
+        width: 100%;
+        background-color: rgb(241, 241, 241);
+    }
     .btn {
-        padding: 30px 35px;
+        padding: 20px 25px;
         height: fit-content;
         width: fit-content;
         border: none;
         border-radius: 70px;
         color: #fff;
         font-weight: 450;
-        font-size: 15px;
+        font-size: 16px;
         text-shadow: 0 1.5px 0 rgba(59, 58, 58, 0.5);
         box-shadow: 0 2.5px 0 rgba(255,255,255,.5) inset,
         0 1px 3px rgba(0,0,0,.2);
         background-image: linear-gradient(#FF79DA 10%,#9356DC 70%);
         cursor: pointer;
     }
-    .background-lhtgrey{
-        padding-top: 15px;
-        width: 100%;
-        background-color: rgb(241, 241, 241);
-    }
     .title-h3{
         display: flex;
         justify-items: left;
         margin-left: 35px;
         margin-bottom: 12px;
-        border: none;
         font-size: 25px;
         padding-bottom: 15px;
     }
@@ -452,14 +661,13 @@ button:active {
         display: flex;
         text-align: left;
         justify-items: center;
-        font-style: normal;
         border: none;
         border-radius: 15px;
         margin-left: 30px;
-        margin-bottom: 5px;
-        padding: 20px 20px;
+        margin-bottom: 20px;
+        padding: 22px 20px;
         width: 85%;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 800;
         color: rgb(67, 71, 74);
         box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.2);
@@ -520,7 +728,7 @@ button:active {
     }
    .card {
         display: flex;
-        flex-direction: column;;
+        flex-direction: column;
         justify-content: space-between;
         width: 360px;
         margin: 12px;
@@ -529,18 +737,7 @@ button:active {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
    }
-    .heart-container{
-        padding-right: 30px;
-        position: relative;
-        margin-top: -30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        top: -15px;
-    }
-   .heart-container:hover .transformed {
-    transform: translate(164px, 0px) scale(1.08);
-}
+    
     .img-restaurants{
         width: 100%;
         height: 200px;
@@ -577,6 +774,19 @@ button:active {
         padding-bottom: 0px;
         margin-top: -30px;
     }
+    .heart-container{
+        padding-right: 30px;
+        position: relative;
+        margin-top: -30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        top: -15px;
+    }
+    .heart-container:hover .transformed {
+        right: 66px;
+        transform: translate(164px, 0px) scale(1.08);
+    }
     .card .card-container {
         display: flex; 
         flex-direction: column;
@@ -604,7 +814,6 @@ button:active {
         color: white;
         font-size: 20px;
         font-weight: 400;
-        font-family: 'Raleway', sans-serif;
         font-family: 'Shrikhand';
         cursor: pointer;
     }
