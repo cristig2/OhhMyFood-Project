@@ -278,7 +278,7 @@ button:active {
     .cards-restaurants{
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
         justify-content: center;
         align-items: center;
         background-color: #f1f4f3;
@@ -499,7 +499,11 @@ button:active {
         color: #9d71d6;
     }
     .cards-restaurants{
-        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
         background-color: #f1f4f3;
     }
     .title-cards-restaurants{
