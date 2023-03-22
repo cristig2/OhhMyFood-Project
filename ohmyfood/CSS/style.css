@@ -7,6 +7,10 @@
 a {
     text-decoration: none;
     color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .link-rest{
     color: white;
@@ -404,7 +408,7 @@ button:active {
         padding-right: 20px;
     }
     .title-header{
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 800;
         font-family: 'Raleway', sans-serif;
         font-family: 'Roboto bold', sans-serif;
@@ -415,7 +419,7 @@ button:active {
         color: rgb(116, 116, 117);
     }
     .btn {
-        padding: 22px 35px;
+        padding: 30px 35px;
         height: fit-content;
         width: fit-content;
         border: none;
@@ -440,7 +444,8 @@ button:active {
         margin-left: 35px;
         margin-bottom: 12px;
         border: none;
-        font-size: 20px;
+        font-size: 25px;
+        padding-bottom: 15px;
     }
     .btn-steps .btn-steps-stl{
         position: relative;
@@ -449,12 +454,12 @@ button:active {
         justify-items: center;
         font-style: normal;
         border: none;
-        border-radius: 25px;
+        border-radius: 15px;
         margin-left: 30px;
         margin-bottom: 5px;
-        padding: 12px 20px;
-        width: 65%;
-        font-size: 13px;
+        padding: 20px 20px;
+        width: 85%;
+        font-size: 16px;
         font-weight: 800;
         color: rgb(67, 71, 74);
         box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.2);
@@ -469,13 +474,13 @@ button:active {
     }
     .num-circle {
         position: absolute;
-        left: -7px;
-        top: 10px;
+        left: -12px;
+        top: 18px;
         color: white;
         font-weight: 400;
         background-color: #9d71d6;
         border-radius: 100%;
-        padding: 2px 5px;
+        padding: 4px 8px;
    }
     .fa-mobile-screen-button {
         padding-right: 20px;
