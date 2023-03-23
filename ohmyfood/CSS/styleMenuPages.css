@@ -155,7 +155,7 @@ li a .menu {
     }
     @keyframes menuButtons {
         from {
-            margin-top: -20px;
+            margin-top: 20px;
             opacity: 0;
         }
         to {
