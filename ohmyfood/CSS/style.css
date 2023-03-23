@@ -202,14 +202,14 @@ button:active {
         background-color: rgb(241, 241, 241);
     }
     .btn {
-        padding: 18px 30px;
+        padding: 20px 35px;
         height: fit-content;
         width: fit-content;
         border: none;
         border-radius: 70px;
         color: #fff;
         font-weight: 450;
-        font-size: 24px;
+        font-size: 26px;
         text-shadow: 0 -1.5px 0 rgba(59, 58, 58, 0.5);
         box-shadow: 0 1.5px 0 rgba(255,255,255,.5) inset,
         0 1px 3px rgba(0,0,0,.2);
@@ -226,9 +226,9 @@ button:active {
         border-radius: 15px;        
         margin-left: 10px;
         margin-bottom: 24px;
-        padding: 20px 20px;
+        padding: 22px 20px;
         width: 60%;
-        font-size: 25px;
+        font-size: 24px;
         font-weight: 800;
         color: rgb(67, 71, 74);
         box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.2);
@@ -291,7 +291,7 @@ button:active {
         flex-direction: column;
         overflow: hidden;
         width: 800px;
-        margin: 20px;
+        margin: 25px;
         border-radius: 35px;
         background-color: white;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -299,7 +299,7 @@ button:active {
    }
     .img-restaurants{
         width: 800px;
-        height: 300px;
+        height: 350px;
         border-top-right-radius: 35px;
         border-top-left-radius: 35px;
         object-fit: cover;
@@ -314,17 +314,13 @@ button:active {
     }
     .no-line {
         color: black;
-        font-size: 30px;
+        font-size: 25px;
         padding: 5px 15px;
         text-decoration: none;
         text-decoration-line: none;
     }
-    .name-restaurant{
-        display: flex;
-        justify-items: left;
-    }
     .Ubicationrtr{
-        font-size: 24px;
+        font-size: 20px;
         padding: 15px;
         margin-top: -30px;
     }
@@ -336,7 +332,8 @@ button:active {
     .heart-container {
         position: relative;
         display: inline;
-        margin-top: -30px;
+        width: 32px;
+        margin: -30px auto 0 auto;
     }
     .heart-animations{
         display: flex; 
@@ -382,7 +379,7 @@ button:active {
     }
 }
 /* TABLET */
-@media screen and (min-width: 767px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .title-logo-all-pages {
         font-size: 45px;
         font-weight: 450;
@@ -417,14 +414,14 @@ button:active {
         background-color: rgb(241, 241, 241);
     }
     .btn {
-        padding: 18px 30px;
+        padding: 20px 35px;
         height: fit-content;
         width: fit-content;
         border: none;
         border-radius: 70px;
         color: #fff;
         font-weight: 450;
-        font-size: 20px;
+        font-size: 21px;
         text-shadow: 0 -1.5px 0 rgba(59, 58, 58, 0.5);
         box-shadow: 0 1.5px 0 rgba(255,255,255,.5) inset,
         0 1px 3px rgba(0,0,0,.2);
@@ -442,8 +439,8 @@ button:active {
         border-radius: 15px;
         margin-left: 20px;
         margin-bottom: 22px;
-        padding: 20px 20px;
-        width: 70%;
+        padding: 22px 20px;
+        width: 60%;
         font-size: 20px;
         font-weight: 800;
         color: rgb(67, 71, 74);
@@ -506,7 +503,7 @@ button:active {
         align-items: center;
         flex-direction: column;
         overflow: hidden;
-        width: 600px;
+        width: 400px;
         margin: 18px;
         border-radius: 25px;
         background-color: white;
@@ -514,7 +511,7 @@ button:active {
         transition: 0.3s;
    }
     .img-restaurants{
-        width: 600px;
+        width: 400px;
         height: 280px;
         border-top-right-radius: 25px;
         border-top-left-radius: 25px;
@@ -522,7 +519,7 @@ button:active {
     }
     .background-img {
         width: 100%;
-        height: 300px;
+        height: 280px;
         border-top-right-radius: 25px;
         border-top-left-radius: 25px;
         background-size: cover;
@@ -530,17 +527,13 @@ button:active {
     }
     .no-line {
         color: black;
-        font-size: 25px;
+        font-size: 20px;
         padding: 5px 15px;
         text-decoration: none;
         text-decoration-line: none;
     }
-    .name-restaurant{
-        display: flex;
-        justify-items: left;
-    }
     .Ubicationrtr{
-        font-size: 24px;
+        font-size: 15px;
         padding: 15px;
         margin-top: -30px;
     }
@@ -552,7 +545,8 @@ button:active {
     .heart-container {
         position: relative;
         display: inline;
-        margin-top: -30px;
+        width: 32px;
+        margin: -30px auto 0 auto;
     }
     .heart-animations{
         display: flex; 
@@ -599,7 +593,11 @@ button:active {
 }
 
 /* MOBILE */
-@media screen and (max-width : 767px) {
+@media screen and (max-width : 768px) {
+    .name-restaurant {
+        margin-top: 6px;
+        margin-bottom: 0;
+    }
     .title-logo-all-pages{
         font-size: 30px;
         font-weight: 400;
@@ -634,7 +632,7 @@ button:active {
         background-color: rgb(241, 241, 241);
     }
     .btn {
-        padding: 18px 25px;
+        padding: 20px 25px;
         height: fit-content;
         width: fit-content;
         border: none;
@@ -661,9 +659,9 @@ button:active {
         border: none;
         border-radius: 15px;
         margin-bottom: 22px;
-        padding: 20px 15px;
+        padding: 22px 20px;
         width: 80%;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 800;
         color: rgb(67, 71, 74);
         box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.2);
@@ -756,32 +754,20 @@ button:active {
         text-decoration: none;
         text-decoration-line: none;
     }
-    .name-restaurant{
-        display: flex;
-        justify-items: left;
-        margin-top: 6px;
-    }
     .Ubicationrtr{
-        margin-bottom: 0px;
+        margin: 0;
+        padding: 0 15px;
         display: flex;
         justify-content: space-between;
         font-size: 14px;
-        padding: 15px;
-        padding-bottom: 0px;
-        margin-top: -30px;
     }
     .heart-container{
         padding-right: 30px;
         position: relative;
         margin-top: -30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        width: 32px;
+        margin-left: auto;
         top: -15px;
-    }
-    .heart-container:hover .transformed {
-        right: 66px;
-        transform: translate(164px, 0px) scale(1.08);
     }
     .card .card-container {
         display: flex; 
@@ -832,4 +818,8 @@ button:active {
         color: white;
         padding-right: 8px;
     }
+}
+
+.name-restaurant{
+    display: flex;
 }

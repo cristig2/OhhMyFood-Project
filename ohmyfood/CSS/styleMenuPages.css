@@ -91,14 +91,14 @@ button:active {
     width: 100%;
     animation: menuButtons 4s;
     animation-fill-mode: forwards;
-    margin-top: -20px;
+    margin-top: 20px;
     opacity: 0;
 }
 .animation-main {
-    animation-delay: 1s;
+    animation-delay: 1s !important;
 }
 .animation-dessert {
-    animation-delay: 3s;
+    animation-delay: 3s !important;
 }
 li a .menu {
     display: block;
@@ -137,6 +137,7 @@ li a .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
     .btn {
         padding: 22px 35px;
@@ -155,11 +156,11 @@ li a .menu {
     }
     @keyframes menuButtons {
         from {
-            margin-top: 20px;
+            margin-top: 36px;
             opacity: 0;
         }
         to {
-            margin-top: 0;
+            margin-top: 16px;
             opacity: 1;
         }
     }
@@ -442,4 +443,119 @@ li a .menu {
         color: white;
         padding-right: 25px;
     }
+}
+
+.transformed {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.6s;
+    top: 0;
+    left: 0;
+}
+
+.heart-container {
+    position: relative;
+    display: inline;
+}
+
+.heart-container>* {
+    border: black;
+}
+
+.heart-container:hover .transformed {
+    opacity: 1;
+    transform: scale(1);
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dishContainer {
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    box-shadow: 0px 2px 6px 0px #ddd;
+    overflow: hidden;
+    cursor: pointer;
+    animation-fill-mode: both;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: menuButtons 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.dishContent {
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    min-width: 0;
+    flex-grow: 1;
+}
+
+.dishCheck {
+    background-color: #90DECA;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    width: 0px;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: width 0.5s ease-in-out;
+}
+
+.dishDescription {
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dishPrice {
+    float: right;
+    padding-right: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dishTitle {
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dishContainer>.dishCheck>i {
+    transform: translateX(20px) rotate(0deg);
+    transition: transform 0.5s;
+}
+
+.dishContainer:hover>.dishCheck {
+    width: 60px;
+}
+
+.dishContainer:hover>.dishCheck>i {
+    transform: translateX(0px) rotate(-360deg);
+}
+
+.dishDescription>span {
+    width: calc(100% - 48px);
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
