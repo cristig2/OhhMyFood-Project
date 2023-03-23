@@ -658,15 +658,11 @@ button:active {
     }
     .btn-steps .btn-steps-stl{
         position: relative;
-        display: flex;
-        text-align: left;
-        justify-items: center;
         border: none;
         border-radius: 15px;
-        margin-left: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 22px;
         padding: 22px 20px;
-        width: 85%;
+        width: 80%;
         font-size: 18px;
         font-weight: 800;
         color: rgb(67, 71, 74);
