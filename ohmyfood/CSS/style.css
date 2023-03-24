@@ -16,6 +16,11 @@ a {
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+.new{
+    background-color: rgb(123, 195, 171);
+    padding: 10px 25px;
+    border-radius: 5px;
+}
 /*ANIMATIONS HEART CARDS*/
 .transformed {
     position: absolute;

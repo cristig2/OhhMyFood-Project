@@ -14,23 +14,58 @@ li {
 ul {
     padding: 0px;
 }
-.title-contain > h1{
-    width: 90%;
+.arrow-back{
+    font-size: 22px;
 }
-.title-contain > a{
-    width: 10%;
+.title-logo-all-pages {
     display: flex;
-    justify-content: flex-end;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Shrikhand';
+    cursor: pointer;
 }
-.title-contain{
+.container-photo {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+.restaurant-photo {
     display: flex;
-    align-items: center;
-
+    width: 100%;
+    height: 250px;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
 }
-.border-green {
-    border-bottom: 4px solid rgb(170, 231, 213);
+.container-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+    margin-top: -40px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    justify-content: space-around;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    background-color: rgb(235, 237, 237);
 }
-
+.title-heart {
+    display: flex;
+    justify-content: space-between;
+}
+.restaurant-name {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Shrikhand';
+    cursor: pointer;
+}
 /*ANIMATIONS HEART CARDS*/
 .container-menu span i:nth-child(1){
     display: none;
@@ -57,7 +92,34 @@ button:active {
     width: 450px;
     height: 250px;
 }
-/*ANIMATION MENU*/
+.transformed {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.6s;
+    top: 0;
+    left: 0;
+}
+.heart-container {
+    position: relative;
+    display: inline;
+}
+
+.heart-container>* {
+    border: black;
+}
+.heart-container:hover .transformed {
+    opacity: 1;
+    transform: scale(1);
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heart-animations span i {
+    font-size: 20px;
+    padding: 20px 0;
+}
+/*ANIMATION MENU PAGE*/
 @keyframes animateWidth {
     from {
         width: 0;
@@ -133,344 +195,46 @@ li a .menu {
     animation: spin 1s;
     animation-fill-mode: forwards;
 }
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-    .btn {
-        padding: 22px 35px;
-        height: fit-content;
-        width: fit-content;
-        border: none;
-        border-radius: 70px;
-        color: #fff;
-        font-weight: 450;
-        font-size: 18px;
-        text-shadow: 0 1.5px 0 rgba(59, 58, 58, 0.5);
-        box-shadow: 0 2.5px 0 rgba(255, 255, 255, .5) inset,
-            0 1px 3px rgba(0, 0, 0, .2);
-        background-image: linear-gradient(#FF79DA 10%, #9356DC 70%);
-        cursor: pointer;
+@keyframes menuButtons {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
     }
-    @keyframes menuButtons {
-        from {
-            margin-top: 36px;
-            opacity: 0;
-        }
-        to {
-            margin-top: 16px;
-            opacity: 1;
-        }
-    }
-/* DESKTOP */
-/* Screen more than 900px (Desktops)*/
-@media only screen and (min-width : 851px) {
-    .arrow-back{
-        font-size: 50px;
-        display: flex;
-    }
-    .header {
-        display: flex;
-        flex-direction: column;
-    }
-    .title-logo-all-pages {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 65px;
-        font-weight: 500;
-        font-family: 'Raleway', sans-serif;
-        font-family: 'Shrikhand';
-        cursor: pointer;
-    }
-    .container-photo {
-        width: 100%;
-        height: 550px;
-        overflow: hidden;
-        position: relative;
-    }
-    .restaurant-photo {
-        display: flex;
-        width: 100%;
-        height: 550px;
-        min-height: 100%;
-        min-width: 100%;
-        object-fit: cover;
-    }
-    .container-menu {
-        display: flex;
-        flex-direction: column;
-        padding: 10px 25px;
-        margin-top: -40px;
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        justify-content: space-around;
-        border-top-left-radius: 45px;
-        border-top-right-radius: 45px;
-        background-color: rgb(235, 237, 237);
-    }
-    .title-heart {
-        display: flex;
-        justify-content: space-between;
-    }
-    .restaurant-name {
-        font-size: 35px;
-        font-weight: 500;
-        font-family: 'Raleway', sans-serif;
-        font-family: 'Shrikhand';
-        cursor: pointer;
-    }
-    .heart-animations span i {
-        font-size: 30px;
-        padding: 25px 0;
-    }
-    .menu-title {
-        display: block;
-        width: fit-content;
-        height: 40px;
-        padding: 8px 8px;
-        text-align: center;
-        color: #181818;
-        font-size: 15px;
-    }
-    .bgwhite {
-        background-color: white;
-        margin-bottom: 12px;
-        width: 80%;
-    }
-    .description-plate {
-        width: 400px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-    .checkmark {
-        background-color: rgb(170, 231, 213);
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        width: 0;
-        padding: 0 !important;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        display: none;
-    }
-    .checkmark svg {
-        display: block;
-        height: 20px;
-        color: rgb(170, 231, 213);
-        background-color: white;
-        border-radius: 100%;
-    }
-    .footer-all-pages {
-        width: 100%;
-        height: 280px;
-        padding-bottom: 25px;
-        background-color: rgb(37, 37, 37);
-    }
-    .footer-logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 15px;
-        margin-top: 0px;
-        color: white;
-        font-size: 35px;
-        font-weight: 350;
-        font-family: 'Raleway', sans-serif;
-        font-family: 'Shrikhand';
-        cursor: pointer;
-    }
-    .footer-options {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 25px;
-        font-weight: 450;
-        text-decoration: none;
-        text-decoration-line: none;
-    }
-    .fa-utensils {
-        color: white;
-        padding-right: 25px;
-
-    }
-    .fa-handshake-angle {
-        color: white;
-        padding-right: 25px;
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
-/* MOBILE */
-/* Screen less than 900px  (tablets mobiles)*/
-@media only screen and (max-width : 850px) {
-    .arrow-back{
-        font-size: 22px;
-    }
-    .title-logo-all-pages {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        width: 100%;
-        font-size: 30px;
-        font-weight: 500;
-        margin-bottom: 10px;
-        font-family: 'Raleway', sans-serif;
-        font-family: 'Shrikhand';
-        cursor: pointer;
-    }
-    .container-photo {
-        width: 100%;
-        height: 250px;
-        overflow: hidden;
-        position: relative;
-    }
-    .restaurant-photo {
-        display: flex;
-        width: 100%;
-        height: 250px;
-        min-height: 100%;
-        min-width: 100%;
-        object-fit: cover;
-    }
-    .container-menu {
-        display: flex;
-        flex-direction: column;
-        padding: 10px 25px;
-        margin-top: -40px;
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        justify-content: space-around;
-        border-top-left-radius: 45px;
-        border-top-right-radius: 45px;
-        background-color: rgb(235, 237, 237);
-    }
-    .title-heart {
-        display: flex;
-        justify-content: space-between;
-    }
-    .restaurant-name {
-        font-size: 25px;
-        font-weight: 500;
-        font-family: 'Raleway', sans-serif;
-        font-family: 'Shrikhand';
-        cursor: pointer;
-    }
-    .heart-animations span i {
-        font-size: 20px;
-        padding: 20px 0;
-    }
-    .menu-title {
-        display: block;
-        width: fit-content;
-        height: 40px;
-        padding: 8px 8px;
-        text-align: center;
-        color: #181818;
-        font-size: 15px;
-    }
-    .bgwhite {
-        background-color: white;
-        margin-bottom: 12px;
-    }
-    .plate-bold{
-        font-size: 15px;
-    }
-    .description-plate {
-        width: 160px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        font-size: 12px;
-        padding-top: 5px;
-    }
-    .checkmark {
-        background-color: rgb(170, 231, 213);
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        width: 0;
-        padding: 0 !important;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        display: none;
-    }
-    .checkmark svg {
-        display: block;
-        height: 20px;
-        color: rgb(170, 231, 213);
-        background-color: white;
-        border-radius: 100%;
-    }
-    .footer-all-pages {
-        width: 100%;
-        padding-bottom: 25px;
-        background-color: rgb(37, 37, 37);
-    }
-    .footer-logo {
-        display: flex;
-        justify-content: left;
-        padding-left: 35px;
-        padding-bottom: 15px;
-        margin-top: 0px;
-        color: white;
-        font-size: 30px;
-        font-weight: 400;
-        font-family: 'Raleway', sans-serif;
-        font-family: 'Shrikhand';
-        cursor: pointer;
-    }
-    .footer-options {
-        display: flex;
-        justify-content: left;
-        padding-left: 20px;
-        color: white;
-        font-size: 25px;
-        font-weight: 450;
-        text-decoration: none;
-        text-decoration-line: none;
-    }
-    .fa-utensils {
-        color: white;
-        padding-right: 25px;
-
-    }
-    .fa-handshake-angle {
-        color: white;
-        padding-right: 25px;
-    }
+.dishContainer>.dishCheck>i {
+    transform: translateX(20px) rotate(0deg);
+    transition: transform 0.5s;
 }
-
-.transformed {
-    position: absolute;
-    opacity: 0;
-    transform: scale(0);
-    transition: all 0.6s;
-    top: 0;
-    left: 0;
+.dishContainer:hover>.dishCheck {
+    width: 60px;
 }
-
-.heart-container {
-    position: relative;
-    display: inline;
+.dishContainer:hover>.dishCheck>i {
+    transform: translateX(0px) rotate(-360deg);
 }
-
-.heart-container>* {
-    border: black;
+.dishDescription>span {
+    width: calc(100% - 48px);
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-
-.heart-container:hover .transformed {
-    opacity: 1;
-    transform: scale(1);
-    background: linear-gradient(#FF79DA, #9356DC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.menu-title {
+    display: block;
+    width: fit-content;
+    font-size: 15px;
+    height: 40px;
+    padding: 8px 8px;
+    text-align: center;
+    color: #181818;
 }
-
+.bgwhite {
+    background-color: white;
+    margin-bottom: 12px;
+}
 .dishContainer {
     background-color: white;
     border-radius: 16px;
@@ -490,7 +254,6 @@ li a .menu {
     animation-fill-mode: forwards;
     opacity: 0;
 }
-
 .dishContent {
     padding-left: 16px;
     padding-top: 12px;
@@ -498,7 +261,21 @@ li a .menu {
     min-width: 0;
     flex-grow: 1;
 }
-
+.dishTitle {
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dishDescription {
+    font-weight: 300;
+    font-size: 10px;
+    padding-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .dishCheck {
     background-color: #90DECA;
     border-top-right-radius: 16px;
@@ -512,16 +289,6 @@ li a .menu {
     font-size: 20px;
     transition: width 0.5s ease-in-out;
 }
-
-.dishDescription {
-    font-weight: 300;
-    font-size: 14px;
-    padding-top: 4px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 .dishPrice {
     float: right;
     padding-right: 16px;
@@ -530,32 +297,315 @@ li a .menu {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-.dishTitle {
-    font-weight: 700;
-    font-size: 16px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
-
-.dishContainer>.dishCheck>i {
-    transform: translateX(20px) rotate(0deg);
-    transition: transform 0.5s;
+.btn {
+    padding: 22px 35px;
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    border-radius: 70px;
+    color: #fff;
+    font-weight: 450;
+    font-size: 18px;
+    text-shadow: 0 1.5px 0 rgba(59, 58, 58, 0.5);
+    box-shadow: 0 2.5px 0 rgba(255, 255, 255, .5) inset,
+        0 1px 3px rgba(0, 0, 0, .2);
+    background-image: linear-gradient(#FF79DA 10%, #9356DC 70%);
+    cursor: pointer;
 }
-
-.dishContainer:hover>.dishCheck {
-    width: 60px;
+.footer-all-pages {
+    width: 100%;
+    padding-bottom: 25px;
+    background-color: rgb(37, 37, 37);
 }
-
-.dishContainer:hover>.dishCheck>i {
-    transform: translateX(0px) rotate(-360deg);
+.footer-logo {
+    display: flex;
+    justify-content: left;
+    padding-left: 35px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Shrikhand';
+    cursor: pointer;
 }
+.footer-options {
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+.fa-utensils {
+    color: white;
+    padding-right: 25px;
 
-.dishDescription>span {
-    width: calc(100% - 48px);
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+}
+.fa-handshake-angle {
+    color: white;
+    padding-right: 25px;
+}
+.title-contain > h1{
+    width: 90%;
+}
+.title-contain > a{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+.title-contain{
+    display: flex;
+    align-items: center;
+
+}
+.border-green {
+    border-bottom: 4px solid rgb(170, 231, 213);
+}
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .arrow-back{
+        font-size: 35px;
+        display: flex;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .title-logo-all-pages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .container-photo {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+    .restaurant-photo {
+        display: flex;
+        width: 100%;
+        height: 400px;
+        min-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+    }
+    .restaurant-name {
+        font-size: 30px;
+        font-weight: 500;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .heart-animations span i {
+        font-size: 25px;
+        padding: 25px 0;
+    }
+    .menu-title {
+        display: block;
+        width: fit-content;
+        font-size: 18px;
+        height: 45px;
+        padding: 8px 8px;
+        text-align: center;
+        color: #181818;
+    }
+    .bgwhite {
+        background-color: white;
+        margin-bottom: 12px;
+        width: 80%;
+    }
+    .dishTitle {
+        font-weight: 700;
+        font-size: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .dishDescription {
+        font-weight: 300;
+        font-size: 14px;
+        padding-top: 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .dishPrice {
+        float: right;
+        padding-right: 18px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .footer-all-pages {
+        width: 100%;
+        height: 200px;
+        padding-bottom: 25px;
+        background-color: rgb(37, 37, 37);
+    }
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 16px;
+        margin-top: 0px;
+        color: white;
+        font-size: 30px;
+        font-weight: 350;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .footer-options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding-right: 20px;
+        font-size: 25px;
+        font-weight: 450;
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+    .fa-utensils {
+        color: white;
+        padding-right: 25px;
+
+    }
+    .fa-handshake-angle {
+        color: white;
+        padding-right: 25px;
+    }
+}
+/* DESKTOP */
+@media only screen and (min-width : 992px) {
+    .arrow-back{
+        font-size: 40px;
+        display: flex;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .title-logo-all-pages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .container-photo {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+    }
+    .restaurant-photo {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        min-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+    }
+    .restaurant-name {
+        font-size: 35px;
+        font-weight: 500;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .heart-animations span i {
+        font-size: 30px;
+        padding: 25px 0;
+    }
+    .menu-title {
+        display: block;
+        width: fit-content;
+        font-size: 22px;
+        height: 50px;
+        padding: 8px 8px;
+        text-align: center;
+        color: #181818;
+    }
+    .bgwhite {
+        background-color: white;
+        margin-bottom: 12px;
+        width: 80%;
+    }
+    .dishTitle {
+        font-weight: 700;
+        font-size: 22px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .dishDescription {
+        font-weight: 300;
+        font-size: 18px;
+        padding-top: 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .dishPrice {
+        float: right;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .footer-all-pages {
+        width: 100%;
+        height: 280px;
+        padding-bottom: 25px;
+        background-color: rgb(37, 37, 37);
+    }
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 18px;
+        margin-top: 0px;
+        color: white;
+        font-size: 35px;
+        font-weight: 350;
+        font-family: 'Shrikhand';
+        cursor: pointer;
+    }
+    .footer-options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding-right: 20px;
+        font-size: 30px;
+        font-weight: 450;
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+    .fa-utensils {
+        color: white;
+        padding-right: 25px;
+
+    }
+    .fa-handshake-angle {
+        color: white;
+        padding-right: 25px;
+    }
 }
