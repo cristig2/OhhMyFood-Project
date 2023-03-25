@@ -197,7 +197,7 @@ li a .menu {
 }
 @keyframes menuButtons {
     from {
-        transform: translateY(-20px);
+        transform: translateY(20px);
         opacity: 0;
     }
     to {
@@ -207,13 +207,13 @@ li a .menu {
 }
 .dishContainer>.dishCheck>i {
     transform: translateX(20px) rotate(0deg);
-    transition: transform 0.5s;
+    transition: transform 1s;
 }
 .dishContainer:hover>.dishCheck {
     width: 60px;
 }
 .dishContainer:hover>.dishCheck>i {
-    transform: translateX(0px) rotate(-360deg);
+    transform: translateX(0px) rotate(360deg);
 }
 .dishDescription>span {
     width: calc(100% - 48px);
